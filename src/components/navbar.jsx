@@ -12,7 +12,7 @@ class Navbar extends React.Component {
             <>
                 <nav className="navbar">
                     <a href="" className="logo_link">
-                        <img src="./public/Home_page/logo.png" alt="" className="im_logo" />
+                        <img src="/Home_page/logo.png" alt="" className="im_logo" />
                     </a>
     
                     <div className="menu" id="menu">

@@ -1,0 +1,141 @@
+.root_container{
+    display: flex;
+    align-items: center;
+    background-color: black;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    height: 100vh;
+
+}
+
+.sidebar{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.button-container{
+    width: 300px;
+    height: 100%;
+    overflow: hidden;
+}
+
+.btns{
+    width: 300px;
+    color: #fff;
+    border: none;
+    height: 50px;
+    position: relative;
+}
+
+.color_1{
+    background-color: #430E15;
+}
+
+.color_2{
+    background-color: #6B5B50; 
+}
+
+.color_3{
+    background-color: #7D7D58;
+}
+
+.color_4{
+    background-color: #081927;
+}
+
+.content-image{
+    width: 300px;
+    height: 350px;
+    overflow: hidden;
+    transition-duration: 2s;
+}
+
+.slide-down{
+    transition-duration: 2s;
+    animation: slide_down 2s ease-out;
+    overflow: hidden;
+}
+
+@keyframes slide_down{
+    /* from{
+        transform: translateY(350px);
+    }
+    to{
+        transform: translateY(0);
+    } */
+
+    0%{
+        transform: translateY(350px);
+        height: 0px;
+    }
+
+    25%{
+        transform: translateY(300px);
+        height: 50px;
+    }
+
+    50%{
+        transform: translateY(50px);
+        height: 300px;
+    }
+
+    100%{
+        transform: translateY(0);
+        height: 350px;
+    }
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+    padding: 0 10%;
+}
+
+.heading{
+    color: #FFF;
+    font-family: "IBM Plex Sans Condensed", sans-serif;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 4.8px;
+}
+
+.para_1{
+    color: #FFF;
+    font-family: "DM Sans";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-top: 60px;
+    line-height: 25px;
+}
+
+.para_2{
+    margin-top: 40px;
+}
+
+.explore_more_btn{
+    width: 150px;
+    height: 50px;
+    border-radius: 10px;
+    color: white;
+    background-color:#430E15;
+    border: 2px solid transparent;
+    font-weight: 500;
+    font-size: 16px;
+    transition-duration: 1s;
+    margin-top: 30px;
+}
+
+.explore_more_btn:hover{
+    background-color: transparent;
+    color: #430E15;
+    border: 2px solid #430E15;
+    font-weight: 600;
+    cursor: pointer;
+}

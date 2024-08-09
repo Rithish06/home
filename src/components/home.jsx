@@ -2,6 +2,7 @@ import React from "react";
 import "../css/home.css";
 import { useForm } from "react-hook-form";
 import Navbar from "./navbar";
+import HomeSerevice from "./home_services";
 
 const Home = () => {
   const {
@@ -109,6 +110,11 @@ const Home = () => {
               </div>
             </div>
           </div>
+        </div>
+
+        {/* container 3 */}
+        <div className="container_3">
+          <HomeSerevice />
         </div>
 
         {/* container 4 */}
