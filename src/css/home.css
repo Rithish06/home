@@ -706,12 +706,12 @@
     .con_1_head {
         color: #FFF;
         font-family: "IBM Plex Sans Condensed", sans-serif;
-        font-size: 128px;
+        font-size: 108px;
         font-style: normal;
         font-weight: 700;
         line-height: normal;
         letter-spacing: 12.8px;
-        width: 70%;
+        width: 60%;
     }
 
     .caption {

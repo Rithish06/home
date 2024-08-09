@@ -1,7 +1,7 @@
 .root_container{
     display: flex;
     align-items: center;
-    background-color: black;
+    background-color: #161515;
     display: grid;
     grid-template-columns: 50% 50%;
     height: 100vh;
