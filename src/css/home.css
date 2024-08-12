@@ -19,119 +19,91 @@
         overflow: hidden;
         display: flex;
         flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
     }
 
     /* container 1 animation */
 
-    .container_1_animation {
+    .container_1_animation{
         display: flex;
-        justify-content: space-around;
-        border-radius: 50%;
-        animation-name: totEllipse;
-        animation-duration: 20s;
-        animation-timing-function: ease-in-out;
-        animation-delay: 1s;
-        animation-iteration-count: infinite;
-        animation-direction: alternate;
-        animation-fill-mode: forwards;
-        animation-play-state: running;
-        background-color: transparent;
-        transition-duration: 3s;
-        width: 100%;
-        height: 85vh;
+        justify-content: center;
+        align-items: center;
+        gap: 80px;
     }
 
-    .orange_ellipse {
-        width: 180px;
-        height: 180px;
+    .big_ellipse_box{
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+        animation: rotation 20s ease-in-out infinite;
+    }
+
+    .orange_ellipse{
+        width: 300px;
+        height: 300px;
         border-radius: 50%;
         background-color: #F99B2B;
-        filter: blur(30px);
+        opacity: 1;
+        filter: blur(60px);
+        position: relative;
     }
 
-    .blue_ellipse {
-        width: 180px;
-        height: 180px;
+    .blue_ellipse{
+        width: 300px;
+        height: 300px;
         border-radius: 50%;
-        background-color: #2d63bacb;
-        filter: blur(30px);
+        background-color: #3D5CFE;
+        opacity: 1;
+        filter: blur(60px);
     }
 
-    .small_orange_ellipse {
-        width: 90px;
-        height: 90px;
-        border-radius: 50%;
-        background-color: #f99c2bda;
-        filter: blur(30px);
-    }
-
-    .small_blue_ellipse {
-        width: 90px;
-        height: 90px;
-        border-radius: 50%;
-        background-color: #2d63bacb;
-        filter: blur(30px);
-    }
-
-    .big_ellipse_box {
+    .small_ellipse_box{
         display: flex;
         flex-direction: column;
-        gap: 30px;
-        animation-name: bigEllipse;
-        animation-duration: 10s;
-        animation-timing-function: ease-in-out;
-        animation-delay: 1s;
-        animation-iteration-count: infinite;
-        animation-direction: alternate;
-        animation-fill-mode: forwards;
-        animation-play-state: running;
-        background-color: transparent;
-        transition-duration: 3s;
+        gap: 50px;
+        animation: rotation 20s ease-in-out infinite;
+        position: relative;
     }
 
-    .small_ellipse_box {
-        display: flex;
-        flex-direction: column;
-        gap: 30px;
-        animation-name: smallEllipse;
-        animation-duration: 10s;
-        animation-timing-function: ease-in-out;
-        animation-delay: 1s;
-        animation-iteration-count: infinite;
-        animation-direction: alternate;
-        animation-fill-mode: forwards;
-        animation-play-state: running;
-        background-color: transparent;
-        transition-duration: 3s;
+    .small_orange_ellipse{
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        background-color: #F99B2B;
+        opacity: 1;
+        filter: blur(50px);
+    }
+    .small_blue_ellipse{
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        background-color: #3D5CFE;
+        opacity: 1;
+        filter: blur(50px);
     }
 
-    @keyframes bigEllipse {
-        0% {
-            transform: rotate(0deg);
+    @keyframes rotation{
+        0%{
+            transform: rotate(0);
+            
+        }
+        25%{
+           gap: 100px;
+        }
+        50%{
+            gap: 200px;
         }
 
-        100% {
+        75%{
+            gap: 0;
+        }
+        100%{
             transform: rotate(360deg);
-        }
-    }
-
-    @keyframes smallEllipse {
-        0% {
-            transform: rotate(0deg);
-        }
-
-        100% {
-            transform: rotate(360deg);
-        }
-    }
-
-    @keyframes totEllipse {
-        0% {
-            transform: rotate(0deg);
-        }
-
-        100% {
-            transform: rotate(360deg);
+            bottom: 0;
+            left: 0;
+            gap: 50px;
         }
     }
 
@@ -139,9 +111,11 @@
 
     .con_1_contents {
         position: relative;
-        margin-top: -90vh;
-        height: 100%;
-        height: 82.5vh;
+        margin-top: -100vh;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
     }
 
     .welcome_im {
@@ -152,7 +126,7 @@
         width: 50%;
         font-weight: 700;
         margin-left: 10%;
-        margin-top: 12%;
+        /* margin-top: 12%; */
     }
 
     .con_1_head {
@@ -184,6 +158,7 @@
         background: #F99B2B;
         height: 36px;
         padding: 0px 10px;
+        width: 150px;
         gap: 10px;
         border: none;
         color: #ffffff;
@@ -566,29 +541,29 @@
 @media (min-width: 730px) {
 
     .orange_ellipse {
-        width: 250px;
-        height: 250px;
+        width: 350px;
+        height: 350px;
     }
 
     .blue_ellipse {
-        width: 250px;
-        height: 250px;
+        width: 350px;
+        height: 350px;
     }
 
     .small_orange_ellipse {
-        width: 130px;
-        height: 130px;
+        width: 200px;
+        height: 200px;
     }
 
     .small_blue_ellipse {
-        width: 130px;
-        height: 130px;
+        width: 200px;
+        height: 200px;
     }
 
     .welcome_im {
         font-size: 34px;
         width: 40%;
-        margin-top: 8%;
+        /* margin-top: 8%; */
     }
 
     .con_1_head {
@@ -633,7 +608,7 @@
 
 @media (min-width : 810px) {
 
-    .orange_ellipse {
+    /* .orange_ellipse {
         width: 300px;
         height: 300px;
     }
@@ -644,19 +619,19 @@
     }
 
     .small_orange_ellipse {
-        width: 200px;
+        width: 180px;
         height: 200px;
     }
 
     .small_blue_ellipse {
         width: 200px;
         height: 200px;
-    }
+    } */
 
     .welcome_im {
         font-size: 42px;
         width: 38%;
-        margin-top: 8%;
+        /* margin-top: 8%; */
         font-weight: 600;
     }
 
@@ -675,31 +650,50 @@
 @media (min-width : 1020px) {
 
     /* container 1 */
+    
+    .container_1_animation{
+        gap: 100px;
+        animation: conRatate 40s infinite linear;
+        border-radius: 50%;
+    }
+
+    @keyframes conRatate{
+        0%{
+            transform: rotate(0deg);
+        }
+        50%{
+            gap: 200px;
+        }
+        100%{
+            transform: rotate(360deg);
+            gap: 100px;
+        }
+    }
 
     .orange_ellipse {
-        width: 350px;
-        height: 350px;
+        width: 450px;
+        height: 450px;
     }
 
     .blue_ellipse {
-        width: 350px;
-        height: 350px;
+        width: 450px;
+        height: 450px;
     }
 
     .small_orange_ellipse {
-        width: 200px;
-        height: 200px;
+        width: 280px;
+        height: 280px;
     }
 
     .small_blue_ellipse {
-        width: 200px;
-        height: 200px;
+        width: 280px;
+        height: 280px;
     }
 
     .welcome_im {
         font-size: 44px;
         width: 350px;
-        margin-top: 4%;
+        /* margin-top: 4%; */
         font-weight: 600;
     }
 
