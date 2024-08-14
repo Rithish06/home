@@ -1,141 +1,202 @@
-.root_container{
-    display: flex;
-    align-items: center;
-    background-color: #161515;
+.root-container{
+    padding: 0;
+    margin: 0;
+}
+
+.container_3 {
+    height: 100vh;
     display: grid;
     grid-template-columns: 50% 50%;
-    height: 100vh;
-
+    background-color: #161515;
 }
 
-.sidebar{
+.hide {
+    display: none;
+}
+
+.accordians {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.button-container{
-    width: 300px;
-    height: 100%;
-    overflow: hidden;
-}
-
-.btns{
-    width: 300px;
-    color: #fff;
-    border: none;
-    height: 50px;
-    position: relative;
-}
-
-.color_1{
-    background-color: #430E15;
-}
-
-.color_2{
-    background-color: #6B5B50; 
-}
-
-.color_3{
-    background-color: #7D7D58;
-}
-
-.color_4{
-    background-color: #081927;
-}
-
-.content-image{
-    width: 300px;
-    height: 350px;
-    overflow: hidden;
-    transition-duration: 2s;
-}
-
-.slide-down{
-    transition-duration: 2s;
-    animation: slide_down 2s ease-out;
-    overflow: hidden;
-}
-
-@keyframes slide_down{
-    /* from{
-        transform: translateY(350px);
-    }
-    to{
-        transform: translateY(0);
-    } */
-
-    0%{
-        transform: translateY(350px);
-        height: 0px;
-    }
-
-    25%{
-        transform: translateY(300px);
-        height: 50px;
-    }
-
-    50%{
-        transform: translateY(50px);
-        height: 300px;
-    }
-
-    100%{
-        transform: translateY(0);
-        height: 350px;
-    }
-}
-
-.content{
-    display: flex;
-    flex-direction: column;
     justify-content: center;
-    color: white;
-    padding: 0 10%;
+    align-items: center;
+    gap: 20px;
 }
 
-.heading{
-    color: #FFF;
-    font-family: "IBM Plex Sans Condensed", sans-serif;
-    font-size: 48px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    letter-spacing: 4.8px;
+.card_1 {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    background-image: url('../Home_page/Rectangle 38.png');
+    background-size: cover;
+    width: 330px;
+    height: 400px;
+    transition: 2s;
+    animation: slide 2s ease-out;
+    overflow: hidden;
+    border-radius: 10px;
 }
 
-.para_1{
+@keyframes slide {
+    0% {
+        width: 0;
+    }
+
+   30%{
+    width: 250px;
+   }
+
+    100% {
+        width: 330px;
+    }
+}
+
+.caption_container {
+    display: flex;
+    align-items: end;
+    width: 100%;
+}
+
+.card_caption_1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+    animation: popup 1s linear;
+}
+
+.card_caption_2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+    animation: popup 1s linear;
+}
+
+.card_caption_3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+    animation: popup 1s linear;
+}
+
+.card_caption_4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+    animation: popup 2s linear;
+}
+
+@keyframes popup {
+    0% {
+        transform: translateY(60px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+.button {
+    writing-mode: vertical-rl;
+    height: 400px;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    border-radius: 10px;
+}
+
+.button_container {
+    display: flex;
+    justify-content: end;
+    align-items: end;
+}
+
+.color_1 {
+    background-color: #430E15;
+    color: #fff;
+}
+
+.color_2 {
+    background-color: #6B5B50;
+    color: #fff;
+}
+
+.color_3 {
+    background-color: #7D7D58;
+    color: #fff;
+}
+
+.color_4 {
+    background-color: #081927;
+    color: #fff;
+}
+
+/* CONTENT */
+
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px;
+    animation: fadein 1s linear;
+}
+
+@keyframes fadein{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+.content_button_container {
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    width: 100%;
+}
+
+.explore_more {
+    border-radius: 10px;
+    background: #430E15;
+    color: #fff;
+    width: 150px;
+    border: 2px solid transparent;
+    height: 40px;
+    transition: 1s;
+}
+
+.explore_more:hover{
+    background-color: transparent;
+    border: 2px solid #430E15;
+}
+
+.para_1 {
     color: #FFF;
     font-family: "DM Sans";
     font-size: 16px;
     font-style: normal;
     font-weight: 500;
     line-height: normal;
-    margin-top: 60px;
-    line-height: 25px;
+    padding: 30px 0;
 }
 
-.para_2{
-    margin-top: 40px;
-}
-
-.explore_more_btn{
-    width: 150px;
-    height: 50px;
-    border-radius: 10px;
-    color: white;
-    background-color:#430E15;
-    border: 2px solid transparent;
-    font-weight: 500;
-    font-size: 16px;
-    transition-duration: 1s;
-    margin-top: 30px;
-}
-
-.explore_more_btn:hover{
-    background-color: transparent;
-    color: #430E15;
-    border: 2px solid #430E15;
-    font-weight: 600;
-    cursor: pointer;
+.heading {
+    color: #FFF;
+    margin-bottom: 30px;
+    font-family: "IBM Plex Sans Condensed";
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 3px;
 }

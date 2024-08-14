@@ -113,9 +113,7 @@ const Home = () => {
         </div>
 
         {/* container 3 */}
-        {/* <div className="container_3">
           <HomeSerevice />
-        </div> */}
 
         {/* container 4 */}
 
