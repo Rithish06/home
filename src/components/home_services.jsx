@@ -45,7 +45,7 @@ const AccordianCard = () => {
   const [cardAnime_2, setCardAnime_2] = useState("hide");
   const [cardAnime_3, setCardAnime_3] = useState("hide");
   const [cardAnime_4, setCardAnime_4] = useState("hide");
-  const [contentAnime, setContentAnime] = useState(null)
+  const [contentAnime, setContentAnime] = useState("content")
 
 
 
