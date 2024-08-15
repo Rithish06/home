@@ -1,11 +1,12 @@
 @media (min-width: 300px){
-    .root-container{
+    /* .root-container{
         padding: 0;
         margin: 0;
         display: flex;
         align-items: center;
+        justify-content: center;
     }
-    
+     */
     
     .container_3 {
         height: 170vh;
@@ -14,6 +15,18 @@
         align-items: center;
         justify-content: center;
         background-color: #161515;
+    }
+    
+    .con_3_heading{
+        color: #FFF;
+        font-family: "IBM Plex Sans Condensed";
+        font-size: 30px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        letter-spacing: 3px;
+        text-align: center;
+        margin-top: 10%;
     }
     
     .hide {
@@ -189,6 +202,7 @@
 }
 
 @media (min-width: 400px){
+
     .card_1 {
         display: flex;
         flex-direction: column;
@@ -263,6 +277,10 @@
 
     .container_3{
         height: 170vh;
+    }
+
+    .con_3_heading{
+        font-size: 40px;
     }
 
     .accordians{
@@ -344,6 +362,10 @@
         background-color: #161515;
     }
     
+    .con_3_heading{
+        font-size: 50px;
+    }
+
     .hide {
         display: none;
     }

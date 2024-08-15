@@ -107,7 +107,9 @@ const AccordianCard = () => {
 
   return (
     <div className="root_container">
+
       {/* leftside */}
+      <div className="con_3_heading">Our Services</div>
       <div className="container_3">
         <div className="accordians">
             {/* card 1 */}
