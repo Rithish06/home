@@ -47,6 +47,7 @@ const Home = () => {
 
         {/* container 1 content */}
         <div className="con_1_contents">
+          {/* <Navbar /> */}
           <div className="welcome_im">Welcome to Invention Minds</div>
           <div className="con_1_head">We Partner With You</div>
           <div className="caption">To Drive Business Growth</div>
