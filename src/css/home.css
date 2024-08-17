@@ -87,7 +87,6 @@
     @keyframes rotation{
         0%{
             transform: rotate(0);
-            
         }
         25%{
            gap: 100px;
@@ -287,9 +286,7 @@
         display: flex;
         align-items: center;
         flex-direction: column;
-        /* display: grid;
-    grid-template-columns: 50% 50%; */
-        padding: 10% 10%;
+        padding:10%;
         background: #161515;
         height: 100vh;
         gap: 30px;
@@ -791,7 +788,7 @@
         display: grid;
         gap: 0;
         grid-template-columns: 50% 50%;
-        padding: 0% 10%;
+        /* padding: 10%; */
         background: #161515;
         height: 100vh;
 
@@ -844,7 +841,7 @@
     /* container 5 */
 
     .container_5 {
-        background-color: #000;
+        background-color: #161515;;
         height: 80vh;
         display: flex;
         flex-direction: column;

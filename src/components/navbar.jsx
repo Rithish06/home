@@ -1,5 +1,10 @@
 import React from "react";
 import '../css/navbar.css'
+import { BrowserRouter, Routes, Route, NavLink } from "react-router-dom";
+import Home from "./home";
+import About from "./About";
+import Career from "./Career";
+import Contact from "./Contact";
 
 
 class Navbar extends React.Component {
@@ -10,6 +15,7 @@ class Navbar extends React.Component {
     render(){
         return(
             <>
+                <BrowserRouter>
                 <nav className="navbar">
                     <a href="" className="logo_link">
                         <img src="/Home_page/logo.png" alt="" className="im_logo" />
@@ -17,10 +23,10 @@ class Navbar extends React.Component {
     
                     <div className="menu" id="menu">
                         <ul id="nav_list" className={this.state.clicked ? "#navbar active" : "#navbar"}>
-                            <li className="nav_list_item"><a href="" className="active">Home</a></li>
-                            <li className="nav_list_item"><a href="">Contact Us</a></li>
-                            <li className="nav_list_item"><a href="">Services</a></li>
-                            <li className="nav_list_item"><a href="">Career</a></li>
+                            <li className="nav_list_item"><NavLink to = '/'>Home</NavLink></li>
+                            <li className="nav_list_item"><NavLink to = '/About' >Contact Us</NavLink></li>
+                            <li className="nav_list_item"><NavLink to = '/contact' >Services</NavLink></li>
+                            <li className="nav_list_item"><NavLink to = '/career' >Career</NavLink></li>
                         </ul>
                     </div>
     
@@ -28,6 +34,13 @@ class Navbar extends React.Component {
                         <i id="" className={this.state.clicked ? "fas fa-times" : "fas fa-bars"}></i>
                     </div>
                 </nav>
+                <Routes>
+                    <Route path="/" element={<Home />} />
+                    <Route path="/about" element={<About />} />
+                    <Route path="/career" element={<Career />} />
+                    <Route path="/contact" element={<Contact />} />
+                </Routes>
+                </BrowserRouter>
             </>
         )
     }
