@@ -1,10 +1,7 @@
 import React from "react";
 import "../css/home.css";
 import { useForm } from "react-hook-form";
-import Navbar from "./navbar";
 import HomeSerevice from "./home_services";
-import Header from "./Header";
-
 const Home = () => {
   const {
     register,
