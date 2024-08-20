@@ -1,9 +1,11 @@
 import React from 'react'
+import Header from './Header'
 
 const About = () => {
   return (
-    <div>
-      <h1 style={{color:'red', marginTop:'100px' }}>About us 404</h1>
+    <div style={{color:'red', height: '100vh', background:'black'}}>
+      {/* <Header /> */}
+      <h1 style={{color:'red' }}>About us 404</h1>
     </div>
   )
 }
