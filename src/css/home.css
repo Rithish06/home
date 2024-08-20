@@ -103,6 +103,7 @@
 
         height: 85vh;
         margin-top: -85vh;
+        position: relative;
         display: flex;
         flex-direction: column;
         justify-content: center;
