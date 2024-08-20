@@ -3,6 +3,7 @@ import "../css/home.css";
 import { useForm } from "react-hook-form";
 import Navbar from "./navbar";
 import HomeSerevice from "./home_services";
+import Header from "./Header";
 
 const Home = () => {
   const {
@@ -30,7 +31,6 @@ const Home = () => {
       <div className="index_container">
         {/* container 1 */}
         <div className="container_1">
-          <div className="main_nav"></div>
 
           {/* container 1 animation */}
           <div className="container_1_animation">
@@ -46,8 +46,10 @@ const Home = () => {
         </div>
 
         {/* container 1 content */}
+        {/* <div className="navbar_container">
+          <Header />
+        </div> */}
         <div className="con_1_contents">
-          {/* <Navbar /> */}
           <div className="welcome_im">Welcome to Invention Minds</div>
           <div className="con_1_head">We Partner With You</div>
           <div className="caption">To Drive Business Growth</div>
