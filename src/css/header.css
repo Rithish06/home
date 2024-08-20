@@ -1,11 +1,16 @@
 #navbar{
     display: flex;
-    justify-content: space-between;
-    padding: 30px 100px 30px 150px;
+    justify-content: space-around;
+    align-items: center;
     background-color: transparent;
     position: absolute;
     width: 100%;
     z-index: 1;
+    height: 100px;
+}
+
+.logo_container{
+    width: 30%;
 }
 
 .logo{
@@ -19,9 +24,7 @@
     display: flex;
     gap: 10px;
 }
-NavLink{
-    text-decoration: none;
-}
+
 .navlist_item{
     color: white;
     list-style-type: none;  
@@ -39,6 +42,9 @@ NavLink{
   border: 2px solid #fff;
 }
 
+#mobile{
+    display: none;
+}
 
 
 
@@ -64,6 +70,8 @@ NavLink{
     }
     #mobile {
         display: block;
+        color: #fff;
+        font-size: 1.5rem;
     }
     .nav_list_item {
         font-size: 24px;
